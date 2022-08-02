@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/neworder/static/css/main.ad242264.css",
+    "main.js": "/neworder/static/js/main.14f0c7e3.js",
+    "static/media/fon.jpg": "/neworder/static/media/fon.319eb01f6e17e2b53944.jpg",
+    "static/media/basket.png": "/neworder/static/media/basket.a11a6222c2e4b56e756a.png",
+    "index.html": "/neworder/index.html",
+    "main.ad242264.css.map": "/neworder/static/css/main.ad242264.css.map",
+    "main.14f0c7e3.js.map": "/neworder/static/js/main.14f0c7e3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ad242264.css",
+    "static/js/main.14f0c7e3.js"
+  ]
+}
