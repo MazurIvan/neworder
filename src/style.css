@@ -7,6 +7,12 @@ body {
     background-size: cover;
 }
 
+h2 {
+    font-size: 20px;
+    margin: 0;
+    color: brown;
+}
+
 .header {
     display: flex;
     color: rgb(255, 255, 255);
@@ -49,10 +55,16 @@ body {
     border-radius: 24px;
 }
 
-img {
+.borscht {
     width: 100%;
     border: 1px solid rgba(255, 255, 255, 0.30);
     border-radius: 10px;
+}
+
+.Basket {
+    font-size: 15px;
+    background: no-repeat url(basket.png);
+    color: brown;
 }
 
 .App {
