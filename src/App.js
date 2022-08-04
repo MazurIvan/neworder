@@ -27,8 +27,13 @@ function App() {
       <button onClick={handleClickMin} className="Del">Прибрати</button>
       <br></br>
       <br></br>
-      <button onClick={addBasket} className="Buy">У кошик!</button>
-      <br></br>
+      <div id="modal">
+        <div id="window">
+          Додано у кошик!<br></br>
+          <a href="#" className="close">Добре</a>
+        </div>
+      </div>
+      <a href="#modal" className="btn" onClick={addBasket}>У кошик!</a>
       <p className="Basket">У кошику {basket} замовлень.</p>
     </div>
   );

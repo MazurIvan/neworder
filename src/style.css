@@ -121,7 +121,8 @@ h2 {
     color: #fff;
     padding: 8px 16px;
     font-size: 16px;
-    background-color: green;
+    background-color: rgb(247, 97, 52);
+    margin: 5px;
 }
 
 button {
@@ -146,6 +147,39 @@ button {
     background-color: brown;
 }
 
-.Buy {
-    background-color: rgb(172, 230, 86);
-}
+#modal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+  #window {
+    width: 300px;
+    height: 90px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: black;
+  }
+  #modal:target {display: block;}
+  .close {
+    display: inline-block;
+    color: white;
+    padding: 0 12px;
+    margin: 10px;
+    text-decoration: none;
+    background: green;
+    font-size: 14pt;
+    cursor:pointer;
+    border-radius: 5px;
+  }
+  .close:hover {background: #e6e6ff;}
