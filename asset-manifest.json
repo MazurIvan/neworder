@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/neworder/static/css/main.ebf93ede.css",
-    "main.js": "/neworder/static/js/main.14f0c7e3.js",
+    "main.css": "/neworder/static/css/main.623914ed.css",
+    "main.js": "/neworder/static/js/main.9b9625c1.js",
     "static/media/fon.jpg": "/neworder/static/media/fon.319eb01f6e17e2b53944.jpg",
     "index.html": "/neworder/index.html",
-    "main.ebf93ede.css.map": "/neworder/static/css/main.ebf93ede.css.map",
-    "main.14f0c7e3.js.map": "/neworder/static/js/main.14f0c7e3.js.map"
+    "main.623914ed.css.map": "/neworder/static/css/main.623914ed.css.map",
+    "main.9b9625c1.js.map": "/neworder/static/js/main.9b9625c1.js.map"
   },
   "entrypoints": [
-    "static/css/main.ebf93ede.css",
-    "static/js/main.14f0c7e3.js"
+    "static/css/main.623914ed.css",
+    "static/js/main.9b9625c1.js"
   ]
 }
