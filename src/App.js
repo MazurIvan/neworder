@@ -11,7 +11,7 @@ function App() {
   }
 
   const varenyku = () => {
-    document.getElementById("change1").innerHTML = "Вареники"
+    document.getElementById("change1").innerHTML = "Вареники з картоплею"
     document.getElementById("change2").innerHTML = "100 грн"
   }
 
