@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/neworder/static/css/main.2c574440.css",
+    "main.css": "/neworder/static/css/main.4734ee05.css",
     "main.js": "/neworder/static/js/main.9b9625c1.js",
-    "static/media/fon.jpg": "/neworder/static/media/fon.319eb01f6e17e2b53944.jpg",
+    "static/media/ornament.jpg": "/neworder/static/media/ornament.f45759cc35bfb90093d5.jpg",
     "index.html": "/neworder/index.html",
-    "main.2c574440.css.map": "/neworder/static/css/main.2c574440.css.map",
+    "main.4734ee05.css.map": "/neworder/static/css/main.4734ee05.css.map",
     "main.9b9625c1.js.map": "/neworder/static/js/main.9b9625c1.js.map"
   },
   "entrypoints": [
-    "static/css/main.2c574440.css",
+    "static/css/main.4734ee05.css",
     "static/js/main.9b9625c1.js"
   ]
 }
