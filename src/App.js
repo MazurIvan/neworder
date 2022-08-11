@@ -1,33 +1,35 @@
 import { useState } from "react";
 import "./style.css";
-import borscht1 from "./borscht1.jpg"
-import varenyki from "./varenyki.jpg"
+import borscht1 from "./borscht1.jpg";
+import varenyki from "./varenyki.jpg";
 
 function App() {
 
   const borscht = () => {
-    document.getElementById("change1").innerHTML = "Борщ"
-    document.getElementById("change2").innerHTML = "100 грн"
+    document.getElementById("change1").innerHTML = "Борщ";
   }
 
   const varenyku = () => {
-    document.getElementById("change1").innerHTML = "Вареники з картоплею"
-    document.getElementById("change2").innerHTML = "100 грн"
+    document.getElementById("change1").innerHTML = "Вареники з картоплею";
   }
 
-  const [count, updateCount] = useState(0);
-  const [basket, updateBasket] = useState(0)
+  let [count, updateCount] = useState(0);
+  let [price, updatePrice] = useState(0);
 
-  const addBasket = () => {
-    updateBasket(basket + 1);
+  const clearAll = () => {
+    updateCount(count = 0);
+    updatePrice(price = 0);
+    document.getElementById("change1").innerHTML = "Оберіть страву у меню";
   }
 
   const handleClick = () => {
     updateCount(count + 1);
+    updatePrice(price + 100);
   }
 
   const handleClickMin = () => {
     updateCount(count - 1);
+    updatePrice(price - 100);
   }
 
   return (
@@ -72,7 +74,7 @@ function App() {
     <div className="item">
     <div className="App">
       <h1 id="change1">Оберіть страву у меню</h1>
-      <h2 id="change2">0 грн</h2>
+      <h2 id="change2">{price} грн</h2>
       <p>Кількість замовленних порцій: {count}.</p>
       <button onClick={handleClick} className="Add">Додати</button>
       <button onClick={handleClickMin} className="Del">Прибрати</button>
@@ -81,11 +83,10 @@ function App() {
       <div id="modal">
         <div id="window">
           Додано у кошик!<br></br>
-          <a href="#main1" className="close">Добре</a>
+          <a href="#sec1" className="close">Добре</a>
         </div>
       </div>
-      <a href="#modal" className="btn" onClick={addBasket}>У кошик!</a>
-      <p className="Basket">У кошику {basket} замовлень.</p>
+      <a href="#modal" className="btn" onClick={clearAll}>У кошик!</a>
     </div>
     </div>
     </div>
