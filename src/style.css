@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 html {
@@ -7,7 +8,7 @@ html {
 }
 
 body {
-    background: no-repeat center center fixed url(fon.jpg);
+    background: no-repeat center center fixed url(ornament.jpg);
     background-size: cover;
 }
 
@@ -83,7 +84,6 @@ h2 {
     align-items: center;
     color: rgb(255, 255, 255);
     text-align: center;
-    border-radius: 24px;
     margin: 0 0 40px;
 }
 
@@ -91,7 +91,7 @@ h2 {
     color: white;
     text-decoration: none;
     display: block;
-    font-size: 30px;
+    font-size: 25px;
     padding: 30px;
 }
 
@@ -129,7 +129,7 @@ h2 {
     -webkit-backdrop-filter: blur(21px);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.36);
     border: 1px solid rgba(255, 255, 255, 0.16);
-    border-radius: 24px;
+    border-radius: 8px;
 }
 
 .photo {
