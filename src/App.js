@@ -30,7 +30,7 @@ function App() {
       <div id="modal">
         <div id="window">
           Додано у кошик!<br></br>
-          <a href="#" className="close">Добре</a>
+          <a href="#main1" className="close">Добре</a>
         </div>
       </div>
       <a href="#modal" className="btn" onClick={addBasket}>У кошик!</a>
