@@ -36,6 +36,11 @@ header ul.nav li {
     margin-left: 25px;
     cursor: pointer;
     transition: opacity 200ms ease;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 header ul.nav li:hover {
@@ -250,6 +255,20 @@ main .add-to-cart:hover,
     transform: scale(1.1);
 }
 
+.inform {
+    text-align: center;
+    margin: 10%;
+}
+
+.contacts-us {
+    margin: 10%;
+}
+
+.contacts {
+    margin: 30px;
+    font-size: 100px;
+}
+
 footer {
     text-align: center;
     margin-top: 100px;
@@ -328,5 +347,10 @@ footer {
 
     .full-item img {
         height: 150px;
+    }
+
+    .contacts {
+        font-size: 50px;
+        margin: 10px;
     }
 }

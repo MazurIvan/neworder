@@ -10,6 +10,7 @@ import pepper from './components/pepper.jpg';
 import uzvar from './components/uzvar.jpg';
 import Categories from "./components/Categories";
 import ShowFullItems from "./components/ShowFullItems";
+import Inform from "./components/Inform";
 
 class App extends React.Component {
   constructor(props) {
@@ -84,6 +85,7 @@ class App extends React.Component {
         <Items onShowItem={this.onShowItem} items={this.state.currentItems} onAdd={this.addToOrder} />
 
         {this.state.showFullItem && <ShowFullItems onAdd={this.addToOrder} onShowItem={this.onShowItem} item={this.state.fullItem} />}
+        <Inform />
         <Footer />
       </div>
     );
