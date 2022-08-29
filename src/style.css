@@ -294,8 +294,8 @@ footer {
     }
 
     .categories div {
-        padding: 10px;
-        margin: 5px;
+        padding: 5px;
+        margin: 2px;
     }
 
     header .presentation::after {
@@ -320,13 +320,13 @@ footer {
 
     .full-item > div {
         position: fixed;
-        width: 350px;
+        width: 300px;
         margin: 40% 4% auto;
         padding: 40px 10px;
         
     }
 
     .full-item img {
-        height: 200px;
+        height: 150px;
     }
 }
