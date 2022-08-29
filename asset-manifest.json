@@ -1,16 +1,20 @@
 {
   "files": {
-    "main.css": "/neworder/static/css/main.8e2bc919.css",
-    "main.js": "/neworder/static/js/main.a632222f.js",
-    "static/media/fon.jpg": "/neworder/static/media/fon.319eb01f6e17e2b53944.jpg",
-    "static/media/varenyki.jpg": "/neworder/static/media/varenyki.75bacd418d5739cf5ed0.jpg",
-    "static/media/borscht1.jpg": "/neworder/static/media/borscht1.db73ef7650564f0de6e5.jpg",
+    "main.css": "/neworder/static/css/main.89381363.css",
+    "main.js": "/neworder/static/js/main.980ad3d7.js",
+    "static/media/meat.jpg": "/neworder/static/media/meat.d585f9e72c5251c553e1.jpg",
+    "static/media/pepper.jpg": "/neworder/static/media/pepper.deb0220663e303724524.jpg",
+    "static/media/pelmeny.jpg": "/neworder/static/media/pelmeny.63e8168719b78577d178.jpg",
+    "static/media/buddha-bowl-dish-with-chicken-fillet-rice-red-cabbage-carrot-fresh-lettuce-salad-sesame.jpg": "/neworder/static/media/buddha-bowl-dish-with-chicken-fillet-rice-red-cabbage-carrot-fresh-lettuce-salad-sesame.1b253983a2a44dde4658.jpg",
+    "static/media/uzvar.jpg": "/neworder/static/media/uzvar.4d5c8152af7dd39f56d3.jpg",
+    "static/media/salad.jpg": "/neworder/static/media/salad.c5e1b584842a5482902b.jpg",
+    "static/media/borsch.jpg": "/neworder/static/media/borsch.9fe88a6d87b7e93d00fd.jpg",
     "index.html": "/neworder/index.html",
-    "main.8e2bc919.css.map": "/neworder/static/css/main.8e2bc919.css.map",
-    "main.a632222f.js.map": "/neworder/static/js/main.a632222f.js.map"
+    "main.89381363.css.map": "/neworder/static/css/main.89381363.css.map",
+    "main.980ad3d7.js.map": "/neworder/static/js/main.980ad3d7.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e2bc919.css",
-    "static/js/main.a632222f.js"
+    "static/css/main.89381363.css",
+    "static/js/main.980ad3d7.js"
   ]
 }
