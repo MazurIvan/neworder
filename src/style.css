@@ -1,224 +1,256 @@
-* {
-    box-sizing: border-box;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
 
-html {
-    scroll-behavior: smooth;
+* {
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    background: no-repeat center center fixed url(fon.jpg);
-    background-size: cover;
+    background: #fff;
+    color: #222;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
 }
 
-h2 {
-    font-size: 20px;
-    margin: 0;
-    color: brown;
+.wrapper {
+    width: 1280px;
+    margin: 50px auto;
 }
 
-.header {
-    display: flex;
-    position: fixed;
-    flex-direction: row;
-    justify-content: space-between;
-    top: 0; left: 0;
-    width: 100%; height: 12%;
-    background: black;
-    color: rgb(247, 92, 30);
-    font-size: 10px;
-    z-index: 10;
-}
-
-.header2 {
-    display: block;
+header {
     position: relative;
-    flex-direction: row;
-    text-align: center;
-    align-items: center;
-    width: 90%; height: 10%;
-    background: black;
-    color: rgb(247, 92, 30);
-    font-size: 10px;
-    border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-.mainmenubtn {
-    background-color: black;
-    color: white;
-    border: none;
+header .logo {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+header ul.nav {
+    float: right;
+    list-style: none;
+}
+
+header ul.nav li {
+    display: inline;
+    margin-left: 25px;
     cursor: pointer;
-    font-size: 30px;
-}
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-.dropdown-child {
-    display: none;
-    background-color: black;
-    min-width: 200px;
-    font-size: 20px;
-}
-.dropdown-child a {
-    color: white;
-    padding: 30px;
-    text-decoration: none;
-    display: block;
-}
-.dropdown:hover .dropdown-child {
-    display: block;
+    transition: opacity 200ms ease;
 }
 
-.mainmenu {
-    display: inline-block;
-    flex-direction: column;
-    position: relative;
-    top: 80px;
-    padding: 20px;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    margin: 0 0 40px;
+header ul.nav li:hover {
+    opacity: 0.5;
 }
 
-.menubtn {
-    color: white;
-    text-decoration: none;
-    display: block;
-    font-size: 25px;
-    padding: 30px;
+header .shop-cart-button {
+    float: right;
+    cursor: pointer;
+    transition: color, transform 300ms ease;
 }
 
-.container {
-    display: inline-block;
-    flex-direction: column;
-    position: relative;
-    top: 50px;
-    padding: 20px;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    color: rgb(255, 255, 255);
-    text-align: right;
-    border-radius: 24px;
+header .shop-cart-button:hover,
+header .shop-cart-button.active {
+    color: red;
+    transform: scale(1.5);
 }
 
-.container .item {
-    display: inline-block;
-    flex-direction: column;
-    position: relative;
-    width: 100%;
-    padding: 0;
-    margin: 40px 0 40px 0;
-    border-radius: 8px;
-}
-
-.item {
-    background: linear-gradient(
-        135deg,
-        rgba(255, 255, 255, 0.1),
-        rgba(255, 255, 255, 0.1)
-    );
-    backdrop-filter: blur(21px);
-    -webkit-backdrop-filter: blur(21px);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.36);
-    border: 1px solid rgba(255, 255, 255, 0.16);
-    border-radius: 8px;
-}
-
-.photo {
-    width: 100%;
-    border: 1px solid rgba(255, 255, 255, 0.30);
-    border-radius: 10px;
-}
-
-.Basket {
-    font-size: 15px;
-    color: brown;
-}
-
-.App {
-    padding: 30px;
-    font-size: 20px;
-}
-
-.main {
-    padding: 0px;
-}
-
-.btn {
-    appearance: none;
-    border: 0;
-    border-radius: 5px;
-    color: #fff;
-    padding: 8px 16px;
-    font-size: 16px;
-    background-color: rgb(247, 97, 52);
-    margin: 5px;
-    text-decoration: none;
-}
-
-button {
-    appearance: none;
-    border: 0;
-    border-radius: 5px;
-    color: #fff;
-    padding: 8px 16px;
-    margin: 5px;
-    font-size: 16px;
-}
-
-.order {
-    background-color: green;
-}
-
-.Add {
-    background-color: green;
-}
-
-.Del {
-    background-color: brown;
-}
-
-#modal {
-    width: 100%;
-    height: 100%;
+header .shop-cart {
     position: absolute;
+    top: 30px;
+    right: 0;
+    width: 450px;
+    background: #fafafa;
+    -webkit-box-shadow: 6px 6px 7px -1px #4D4D4D; 
+    box-shadow: 6px 6px 7px -1px #4D4D4D;
+    z-index: 1000;
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+header .shop-cart .empty h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+header .shop-cart .item {
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+}
+
+header .shop-cart .item img {
+    width: 70px;
+    height: 40px;
+    float: left;
+    margin-right: 20px;
+    border-radius: 100px;
+}
+
+header .shop-cart .item h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+header .shop-cart .item b {
+    color: #4abd15;
+    font-weight: 600;
+}
+
+header .shop-cart .item .delete-icon {
+    color: rgb(65, 64, 64);
+    float: right;
+    position: relative;
+    top: -25px;
+    cursor: pointer;
+    transition: color, transform 300ms ease;
+}
+
+header .shop-cart .item .delete-icon:hover {
+    color: red;
+    transform: scale(1.5);
+}
+
+header .shop-cart .summa {
+    float: left;
+    width: 100%;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+header .presentation {
+    margin: 50px 0;
+    background: url(./img/buddha-bowl-dish-with-chicken-fillet-rice-red-cabbage-carrot-fresh-lettuce-salad-sesame.jpg) no-repeat;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    position: relative;
+    border-radius: 0 0 0 100px;
+}
+
+header .presentation::after {
+    content: 'Смачно, як у мами!';
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    width: 500px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+header .presentation::before {
+    content: 'Душевно, по-домашньому...';
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    width: 500px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.categories div {
+    display: inline-block;
+    background: #e6e4e4;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin-bottom: 25px;
+    margin-right: 15px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 200ms ease;
+}
+
+.categories div:hover {
+    border-color: silver;
+    transform: scale(1.1);
+}
+
+.full-item {
+    position: fixed;
     top: 0;
     left: 0;
-    display: none;
-  }
-  #window {
-    width: 300px;
-    height: 90px;
-    text-align: center;
-    padding: 15px;
-    border-radius: 10px;
-    color: white;
-    position: absolute;
-    top: 0;
     right: 0;
     bottom: 0;
-    left: 0;
-    margin: auto;
-    background: black;
-  }
-  #modal:target {display: block;}
-  .close {
-    display: inline-block;
-    color: white;
-    padding: 0 12px;
-    margin: 10px;
-    text-decoration: none;
-    background: green;
-    font-size: 14pt;
-    cursor:pointer;
-    border-radius: 5px;
-  }
-  .close:hover {background: #e6e6ff;}
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    overflow: auto;
+}
+
+.full-item > div {
+    width: 600px;
+    position: relative;
+    margin: 5% auto;
+    padding: 40px 30px;
+    background: #fff;
+    border-radius: 9px;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main .item {
+    width: 30%;
+    margin-bottom: 50px;
+    background: #f5f5f5;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+main .item img {
+    width: 100%;
+    height: 220px;
+    border-radius: 10px 10px 0 0;
+    transition: transform 200ms ease;
+    cursor: pointer;
+}
+
+.full-item img {
+    width: 100%;
+    height: 350px;
+    border-radius: 10px 10px 0 0;
+    transition: transform 200ms ease;
+    cursor: pointer;
+}
+
+main .item img:hover, .full-item img:hover {
+    transform: scale(1.05);
+}
+
+main h2, .full-item h2, main p, .full-item p, main b, .full-item b {
+    margin: 10px 20px;
+    color: #333;
+}
+
+main b, .full-item b {color: rgb(30, 185, 30);}
+
+main .add-to-cart,
+.full-item .add-to-cart {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background: red;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 20%;
+    font-weight: 600;
+    transition: transform 200ms ease;
+}
+
+main .add-to-cart:hover,
+.full-item .add-to-cart:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    text-align: center;
+    margin-top: 100px;
+}
