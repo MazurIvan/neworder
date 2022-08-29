@@ -262,13 +262,27 @@ footer {
 
     header .logo {
         font-weight: 600;
-        font-size: 40px;
-        margin: 20px 40px;
+        font-size: 30px;
+        margin: 20px 20px;
     }
 
     header ul.nav {
-        float: right;
+        float: left;
         list-style: none;
+    }
+
+    header ul.nav li {
+        margin-left: 20px;
+    }
+
+    header .shop-cart-button {
+        margin: 0 30px;
+    }
+
+    header .shop-cart {
+        width: 330px;
+        right: 0px;
+        top: 60px;
     }
 
     main {
@@ -280,7 +294,39 @@ footer {
     }
 
     .categories div {
-        padding: 5px;
-        margin: 2px;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    header .presentation::after {
+        font-size: 25px;
+        top: 50px;
+        left: 20px;
+    }
+
+    header .presentation::before {
+        top: 80px;
+        left: 20px;
+        font-size: 15px;
+    }
+
+    header .presentation {
+        height: 300px;
+    }
+
+    .full-item {
+        width: 100%;
+    }
+
+    .full-item > div {
+        position: fixed;
+        width: 350px;
+        margin: 40% 4% auto;
+        padding: 40px 10px;
+        
+    }
+
+    .full-item img {
+        height: 200px;
     }
 }
