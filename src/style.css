@@ -254,3 +254,33 @@ footer {
     text-align: center;
     margin-top: 100px;
 }
+
+@media only screen and (max-width: 480px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    header .logo {
+        font-weight: 600;
+        font-size: 40px;
+        margin: 20px 40px;
+    }
+
+    header ul.nav {
+        float: right;
+        list-style: none;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    main .item {
+        width: 100%;
+    }
+
+    .categories div {
+        padding: 5px;
+        margin: 2px;
+    }
+}
