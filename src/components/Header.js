@@ -10,6 +10,7 @@ const showOrders = (props) => {
       <Order onDelete={props.onDelete} key={el.id} item={el} />
     ))}
     <p className='summa'>Сума: ₴{new Intl.NumberFormat().format(summa)}</p>
+    <button className='buy-btn'>Замовити</button>
   </div>)
 }
 
@@ -29,7 +30,7 @@ export default function Header(props) {
             <ul className='nav'>
                 <li><a href="#sec1">Про нас</a></li>
                 <li><a href="#sec2">Контакти</a></li>
-                <li>Відгуки</li>
+                <li><a href="#sec3">Відгуки</a></li>
             </ul>
             <FaShoppingCart onClick={() => setCartOpen(cartOpen = !cartOpen)} className={`shop-cart-button ${cartOpen && 'active'}`} />
 

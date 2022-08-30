@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "./components/Header";
-import Footer from "./components/Footer";
 import Items from "./components/Items";
 import borsch from "./components/borsch.jpg";
 import pelmeny from "./components/pelmeny.jpg";
@@ -86,7 +85,6 @@ class App extends React.Component {
 
         {this.state.showFullItem && <ShowFullItems onAdd={this.addToOrder} onShowItem={this.onShowItem} item={this.state.fullItem} />}
         <Inform />
-        <Footer />
       </div>
     );
   }
