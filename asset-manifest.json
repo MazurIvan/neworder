@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/neworder/static/css/main.6150a296.css",
-    "main.js": "/neworder/static/js/main.cc54bf85.js",
+    "main.css": "/neworder/static/css/main.599a8905.css",
+    "main.js": "/neworder/static/js/main.3b52f723.js",
     "static/media/meat.jpg": "/neworder/static/media/meat.d585f9e72c5251c553e1.jpg",
     "static/media/pepper.jpg": "/neworder/static/media/pepper.deb0220663e303724524.jpg",
     "static/media/pelmeny.jpg": "/neworder/static/media/pelmeny.63e8168719b78577d178.jpg",
@@ -9,12 +9,13 @@
     "static/media/uzvar.jpg": "/neworder/static/media/uzvar.4d5c8152af7dd39f56d3.jpg",
     "static/media/salad.jpg": "/neworder/static/media/salad.c5e1b584842a5482902b.jpg",
     "static/media/borsch.jpg": "/neworder/static/media/borsch.9fe88a6d87b7e93d00fd.jpg",
+    "static/media/24456109_16430.jpg": "/neworder/static/media/24456109_16430.66e3edad2e31d5a7f56e.jpg",
     "index.html": "/neworder/index.html",
-    "main.6150a296.css.map": "/neworder/static/css/main.6150a296.css.map",
-    "main.cc54bf85.js.map": "/neworder/static/js/main.cc54bf85.js.map"
+    "main.599a8905.css.map": "/neworder/static/css/main.599a8905.css.map",
+    "main.3b52f723.js.map": "/neworder/static/js/main.3b52f723.js.map"
   },
   "entrypoints": [
-    "static/css/main.6150a296.css",
-    "static/js/main.cc54bf85.js"
+    "static/css/main.599a8905.css",
+    "static/js/main.3b52f723.js"
   ]
 }
