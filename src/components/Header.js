@@ -25,7 +25,7 @@ export default function Header(props) {
 
   return (
     <header>
-        <div>
+        <div className='fixed-head'>
             <span className='logo'>Умовна доставка</span>
             <ul className='nav'>
                 <li><a href="#sec1">Про нас</a></li>
